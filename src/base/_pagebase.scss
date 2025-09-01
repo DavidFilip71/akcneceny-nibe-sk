@@ -1,0 +1,73 @@
+@use 'abstracts/mixins' as *;
+@use 'abstracts/variables' as *;
+
+html,
+body {
+    background-color: $clr-white;
+    color: $clr-black;
+    font-variant-ligatures: none;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    font-family: $mainfont, sans-serif;
+    font-display: swap;
+    font-weight: normal;
+    overflow-x: hidden;
+
+    @include large-desktop {
+        font-size: 0.9375vw;
+    }
+
+    @include small-desktop {
+        font-size: 1.25vw;
+    }
+
+    @include mobile {
+        font-size: 3.5vw;
+    }
+}
+
+body::before {
+    content: '';
+    display: block;
+    height: 0;
+    padding-top: 9.5rem;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+section,
+main,
+header,
+footer {
+    position: relative;
+}
+
+//sekce s barevným pozadím
+/* section {
+    &.red {
+        background-color: red;
+        color: $clr-white;
+    }
+
+    &.red-light {
+        background-color: pink;
+    }
+
+    &.red-dark {
+        background-color: darkred;
+        color: $clr-white;
+    }
+} */
+
+.middle {
+    margin: 0px auto;
+    width: 71.5rem;
+
+    @include mobile {
+        width: 25rem !important;
+    }
+}
+

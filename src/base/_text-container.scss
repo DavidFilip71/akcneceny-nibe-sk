@@ -1,0 +1,9 @@
+@use 'abstracts/mixins' as *;
+@use 'abstracts/variables' as *;
+
+// text který letí z adminu
+.text-container {
+    p {
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,38 @@
+@use 'abstracts/mixins' as *;
+@use 'abstracts/variables' as *;
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        position: relative;
+        padding-left: 1em;
+        margin-bottom: 1em;
+
+        &::before {
+            position: absolute;
+            display: block;
+            font-size: 1rem;
+            line-height: 1rem;
+            left: 0;
+        }
+    }
+}
+
+ul li::before {
+    content: '●';
+    color: pink;
+}
+
+ol {
+    counter-reset: list-counter;
+
+    li {
+        counter-increment: list-counter;
+
+        &::before {
+            content: counter(list-counter) '.';
+        }
+    }
+}

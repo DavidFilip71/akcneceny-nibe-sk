@@ -1,0 +1,133 @@
+@use 'abstracts/mixins' as *;
+@use 'abstracts/variables' as *;
+.notices {
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    overflow: hidden;
+    z-index: 1000;
+    pointer-events: none;
+
+    &.is-bottom-right {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .notification {
+        animation-duration: 0.15s;
+        margin: 0.5em 0;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+        /* border-radius: 4px; */
+        pointer-events: auto;
+        min-height: 3em;
+        position: relative;
+        transform: translateX(calc(100% + 2em));
+        transition: all 0.5s, transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35), opacity 0.3s ease, height 0.5s ease;
+        color: #fff; // Výchozí barva textu
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 2rem;
+
+        &.active {
+            transform: translateX(0%);
+        }
+
+        &.is-success {
+            background-color: $clr-success; // Tmave seda pro úspěch
+        }
+
+        &.is-danger {
+            background-color: $clr-err; // Červená pro chybu
+        }
+
+        &.is-warning {
+            background-color: $clr-err; // Červená pro varování
+        }
+
+        &.is-info {
+            background-color: $clr-blue; // Modrá pro informaci
+        }
+
+        .progress {
+            margin-top: 0.5em;
+            height: 4px;
+            background-color: rgba(255, 255, 255, 0.3); // Poloprůhledná bílá pro progress bar
+            border-radius: 2px;
+            overflow: hidden;
+            width: 100%;
+
+            &::-webkit-progress-bar {
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+
+            &::-webkit-progress-value {
+                background-color: #fff; // Bílá barva pro hodnotu progress baru
+            }
+
+            &::-moz-progress-bar {
+                background-color: #fff; // Bílá barva pro hodnotu progress baru pro Firefox
+            }
+        }
+
+        .delete {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.7); // Poloprůhledná bílá pro tlačítko delete
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:before {
+            content: '×';
+            font-size: 1.2rem;
+            line-height: 1;
+            color: inherit;
+            display: block;
+            }
+
+            &:hover {
+            color: #fff; // Plná bílá při hoveru
+            }
+        }
+
+        &.is-closing {
+            transform: scaleY(0);
+            opacity: 0;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+    }
+}
+
+@include mobile {
+    .notices {
+        padding: 0;
+        position: fixed !important;
+
+        .notification {
+            width: 100%;
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+}
+
+@media print, screen and (min-width: 769px) {
+    .notices {
+        .notification {
+            min-width: 350px;
+            max-width: 600px;
+            overflow: hidden;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "template",
+    "version": "0.1.0",
+    "description": "popis",
+    "author": "Cirque Digital",
+    "scripts": {
+        "compile:sass": "gulp sass",
+        "watch:sass": "gulp"
+    },
+    "devDependencies": {
+        "gulp": "^5.0.0",
+        "gulp-sass": "^6.0.0",
+        "sass": "^1.83.0"
+    }
+}

@@ -1,0 +1,811 @@
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 120%;
+  color: var(--blue);
+  margin-bottom: 0.75rem;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.4rem;
+    line-height: 120%;
+  }
+}
+
+.icon {
+  aspect-ratio: 48/55;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:last-of-type {
+  margin-bottom: 6rem;
+}
+
+section.carousel {
+  width: 100%;
+  height: 41.5rem;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  section.carousel {
+    height: 40rem;
+  }
+}
+section.carousel .carousel-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+section.carousel .carousel-inner .hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  transform: translateX(100%);
+  transition: transform 750ms ease;
+  will-change: transform;
+  z-index: 0;
+  user-select: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.carousel .carousel-inner .hero .middle > p {
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+section.carousel .carousel-inner .hero.h1 {
+  background-image: url(../assets/data/hero.jpg);
+}
+@media (max-width: 500px) {
+  section.carousel .carousel-inner .hero.h1 {
+    background-image: url(../assets/data/heromobile.jpg);
+  }
+}
+section.carousel .carousel-inner .hero.h1 .middle > p:nth-of-type(1) {
+  font-size: 4.6rem;
+  line-height: 100%;
+  color: var(--blue);
+  padding-left: 14.75rem;
+  top: 9rem;
+}
+@media (max-width: 500px) {
+  section.carousel .carousel-inner .hero.h1 .middle > p:nth-of-type(1) {
+    padding-left: 0rem;
+    top: 3rem;
+    font-size: 4rem;
+    line-height: 100%;
+  }
+}
+section.carousel .carousel-inner .hero.h1 .middle > p:nth-of-type(2) {
+  font-size: 3.5rem;
+  line-height: 100%;
+  color: var(--red);
+  padding-left: 21rem;
+  top: 14rem;
+}
+@media (max-width: 500px) {
+  section.carousel .carousel-inner .hero.h1 .middle > p:nth-of-type(2) {
+    padding-left: 0rem;
+    top: 11.5rem;
+    font-size: 3rem;
+    line-height: 100%;
+    width: 80%;
+  }
+}
+section.carousel .carousel-inner .hero.h2 {
+  background-image: url(../assets/data/hero2.jpg);
+}
+@media (max-width: 500px) {
+  section.carousel .carousel-inner .hero.h2 {
+    background-image: url(../assets/data/hero2mobile.jpg);
+  }
+}
+section.carousel .carousel-inner .hero.h2 .middle > p:nth-of-type(1) {
+  font-size: 4rem;
+  line-height: 100%;
+  color: #fff;
+  padding-left: 16rem;
+  top: 4rem;
+}
+@media (max-width: 500px) {
+  section.carousel .carousel-inner .hero.h2 .middle > p:nth-of-type(1) {
+    padding-left: 0rem;
+    top: 2.5rem;
+    font-size: 3.5rem;
+    line-height: 100%;
+  }
+}
+section.carousel .carousel-inner .hero.h2 .middle > p:nth-of-type(2) {
+  font-size: 4rem;
+  line-height: 100%;
+  color: #fff;
+  padding-left: 28rem;
+  top: 8rem;
+}
+section.carousel .carousel-inner .hero.h2 .middle > p:nth-of-type(2) + div {
+  position: absolute;
+  background-color: var(--red);
+  left: 33.5rem;
+  top: 12.5rem;
+  width: 21rem;
+  height: 0.85rem;
+}
+section.carousel .carousel-inner .hero.h2 .middle > p:nth-of-type(2) span {
+  color: var(--red);
+}
+@media (max-width: 500px) {
+  section.carousel .carousel-inner .hero.h2 .middle > p:nth-of-type(2) {
+    padding-left: 0rem;
+    top: 9.5rem;
+    font-size: 3.5rem;
+    line-height: 100%;
+  }
+  section.carousel .carousel-inner .hero.h2 .middle > p:nth-of-type(2) + div {
+    left: 4.75rem;
+    top: 13.25rem;
+    width: 18.75rem;
+    height: 0.75rem;
+  }
+}
+section.carousel .carousel-inner .hero.is-current {
+  transform: translateX(0);
+  z-index: 2;
+}
+section.carousel .carousel-inner .hero.exit-left {
+  transform: translateX(-100%);
+  z-index: 1;
+}
+section.carousel .carousel-inner .hero.exit-right {
+  transform: translateX(100%);
+  z-index: 1;
+}
+section.carousel .carousel-inner .hero.no-transition {
+  transition: none !important;
+}
+section.carousel .carousel-control {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 15;
+  border: none;
+  cursor: pointer;
+}
+section.carousel .carousel-control span {
+  font-size: 3rem;
+  line-height: 100%;
+  display: block;
+  color: #fff;
+}
+section.carousel .carousel-control.prev {
+  left: 0;
+}
+section.carousel .carousel-control.next {
+  right: 0;
+}
+section.carousel .carousel-control.next span {
+  transform: scale(-1);
+}
+section.carousel .carousel-control:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+section.carousel .carousel-control:hover span {
+  color: var(--blue);
+}
+@media (max-width: 500px) {
+  section.carousel .carousel-control {
+    display: none;
+  }
+}
+
+section.hero {
+  width: 100%;
+  height: 41.5rem;
+  background-image: url(../assets/data/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  user-select: none;
+}
+@media (max-width: 500px) {
+  section.hero {
+    background-image: url(../assets/data/heromobile.jpg);
+    height: 40rem;
+  }
+}
+section.hero .middle > p {
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+section.hero .middle > p:nth-of-type(1) {
+  font-size: 4.6rem;
+  line-height: 100%;
+  color: var(--blue);
+  padding-left: 14.75rem;
+  top: 9rem;
+}
+@media (max-width: 500px) {
+  section.hero .middle > p:nth-of-type(1) {
+    padding-left: 0rem;
+    top: 3rem;
+    font-size: 4rem;
+    line-height: 100%;
+  }
+}
+section.hero .middle > p:nth-of-type(2) {
+  font-size: 2.7rem;
+  line-height: 100%;
+  color: var(--red);
+  padding-left: 28rem;
+  top: 14.5rem;
+}
+@media (max-width: 500px) {
+  section.hero .middle > p:nth-of-type(2) {
+    padding-left: 0rem;
+    top: 11.5rem;
+    font-size: 2.5rem;
+    line-height: 100%;
+    width: 80%;
+  }
+}
+
+main {
+  padding-top: 4rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+main h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+main h1 + div {
+  margin: 0 8rem;
+  padding-bottom: 2.5rem;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  main h1 + div {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+main .piggy {
+  width: 12rem;
+  margin-right: 2.5rem;
+  background-image: url(../assets/images/piggy.svg);
+  flex-shrink: 0;
+  position: relative;
+}
+@media (max-width: 500px) {
+  main .piggy {
+    margin-right: 0;
+    background-position: left center;
+  }
+}
+main .piggy > div {
+  background-color: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem;
+  font-size: 1.85rem;
+  line-height: 110%;
+  position: absolute;
+  display: inline-block;
+  width: 14rem;
+  left: -2rem;
+  top: 15rem;
+  transform: rotate(-7.5deg);
+  text-align: right;
+}
+@media (max-width: 500px) {
+  main .piggy > div {
+    left: 9rem;
+    top: 9rem;
+  }
+}
+main .piggy > div span {
+  display: block;
+}
+main .piggy > div span:first-of-type {
+  font-size: 1.1em;
+  line-height: 110%;
+}
+main .piggy > div span:last-of-type {
+  font-size: 0.54em;
+  line-height: 110%;
+}
+main .piggy + div {
+  padding-top: 0;
+}
+@media (max-width: 500px) {
+  main .piggy + div {
+    padding-top: 4rem;
+  }
+}
+main .piggy + div p.disclaimer {
+  text-align: left;
+}
+main .piggy + div p:not(.disclaimer) {
+  font-size: 2rem;
+  line-height: 120%;
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+main .piggy + div p:not(.disclaimer) span {
+  display: block;
+  font-size: 1rem;
+  line-height: 120%;
+  color: var(--black);
+  font-weight: 300;
+}
+@media (max-width: 500px) {
+  main .piggy + div p:not(.disclaimer) {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+}
+main .piggy + div p:not(.disclaimer)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  width: 14rem;
+  height: 1rem;
+  background-color: var(--semiblue);
+}
+main .disclaimer {
+  font-size: 1rem;
+  line-height: 120%;
+  font-weight: 400;
+  text-align: center;
+}
+main .benefit {
+  padding-top: 2.5rem;
+}
+main .benefit p {
+  font-size: 2rem;
+  line-height: 120%;
+  text-align: center;
+}
+main .benefit p:first-of-type {
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  main .benefit p {
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+}
+
+section.reference,
+section.poptavka,
+section.sety {
+  margin-top: 3.5rem;
+}
+section.reference article, section.reference form > div,
+section.poptavka article,
+section.poptavka form > div,
+section.sety article,
+section.sety form > div {
+  padding: 2.5rem;
+  background-color: var(--lightblue);
+}
+section.reference h1,
+section.poptavka h1,
+section.sety h1 {
+  padding-top: 0.5rem;
+}
+
+section.sety article .image {
+  margin-left: 2rem;
+  width: 18rem;
+  height: 22.5rem;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+@media (max-width: 500px) {
+  section.sety article .image {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+section.sety article .image + div {
+  width: 45rem;
+}
+@media (max-width: 500px) {
+  section.sety article .image + div {
+    width: 100%;
+    padding-top: 2rem;
+  }
+}
+section.sety article .image + div p {
+  padding-left: 1.75rem;
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--black);
+}
+section.sety article .image + div p + p {
+  margin-top: 1rem;
+}
+section.sety article .image + div p strong {
+  font-weight: 700;
+  color: var(--blue);
+}
+section.sety article .image + div p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.775rem;
+  width: 1rem;
+  height: 0.25rem;
+  background-color: var(--blue);
+}
+section.sety article .image + div a {
+  height: 3rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--blue);
+  display: block;
+  width: 16rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  user-select: none;
+}
+section.sety article .image + div a:focus, section.sety article .image + div a:hover {
+  color: var(--semiblue);
+}
+section.sety article .price {
+  margin-top: 4rem;
+}
+section.sety article .price > p {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+  color: var(--black);
+}
+section.sety article .price > div {
+  margin-top: 0.5rem;
+  background-color: #fff;
+  color: var(--blue);
+  font-size: 1.5rem;
+  line-height: 110%;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+}
+section.sety article .price > div > div:last-of-type {
+  text-align: right;
+}
+section.sety article .price > div > p {
+  width: 100%;
+  padding-top: 0.25rem;
+  color: var(--black);
+  font-size: 1rem;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: right;
+}
+section.sety article .price > div > p span {
+  text-decoration: line-through;
+}
+@media (max-width: 500px) {
+  section.sety article .price > div > div {
+    width: 100%;
+  }
+  section.sety article .price > div > div:last-of-type {
+    padding-top: 0.5rem;
+  }
+}
+section.sety article:nth-of-type(1) .image {
+  background-image: url(../assets/data/split-1.png);
+}
+section.sety article:nth-of-type(2) .image {
+  background-image: url(../assets/data/split-2.png);
+}
+section.sety article h2 {
+  color: var(--blue);
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 120%;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+section.sety article h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  width: 14rem;
+  height: 1rem;
+  background-color: var(--semiblue);
+}
+
+section.poptavka form .col1 {
+  width: 38.5rem;
+}
+@media (max-width: 500px) {
+  section.poptavka form .col1 {
+    width: 100%;
+  }
+}
+section.poptavka form .col2 {
+  width: 25rem;
+}
+@media (max-width: 500px) {
+  section.poptavka form .col2 {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+section.poptavka form .item.err .label {
+  color: var(--err);
+}
+section.poptavka form .item.err input,
+section.poptavka form .item.err textarea,
+section.poptavka form .item.err .checkbox {
+  outline: 1px dotted var(--err);
+}
+section.poptavka form .item + .item {
+  margin-top: 1.5rem;
+}
+section.poptavka form .item label {
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 120%;
+  color: var(--blue);
+  font-weight: 400;
+  display: block;
+}
+section.poptavka form .item label[for=souhlas] {
+  padding: 0 0 0 0.5rem;
+  font-size: 0.8rem;
+  line-height: 120%;
+}
+section.poptavka form .item label[for=souhlas] a {
+  text-decoration: underline;
+}
+section.poptavka form .item input,
+section.poptavka form .item textarea {
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  line-height: 120%;
+  font-weight: 700;
+  background-color: #fff;
+  padding: 0.75rem;
+  border: none;
+  width: 100%;
+}
+section.poptavka form .item input:focus,
+section.poptavka form .item textarea:focus {
+  outline: 1px dotted var(--black);
+}
+section.poptavka form .item input[type=checkbox],
+section.poptavka form .item textarea[type=checkbox] {
+  display: none;
+}
+section.poptavka form .item input[type=checkbox] + label,
+section.poptavka form .item textarea[type=checkbox] + label {
+  padding: 0.48rem 0 0 0.5rem;
+}
+section.poptavka form .item textarea {
+  height: 16rem;
+  overflow: auto;
+}
+section.poptavka form .item.doublecheck > div {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  section.poptavka form .item.doublecheck > div {
+    width: 100%;
+  }
+  section.poptavka form .item.doublecheck > div + div {
+    margin-top: 1.5rem;
+  }
+}
+section.poptavka form .item.doublecheck + .item {
+  margin-top: 3rem;
+}
+section.poptavka form .item .checkbox {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #fff;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+section.poptavka form .item .checkbox span {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem !important;
+  line-height: 2.4rem !important;
+  color: var(--blue);
+  user-select: none;
+  display: none;
+}
+section.poptavka form .item .checkbox.checked span {
+  display: block;
+}
+section.poptavka form .item .checkbox:focus {
+  outline: 1px dotted var(--black);
+}
+section.poptavka form .item .button {
+  margin: 0 5rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--blue);
+  user-select: none;
+  cursor: pointer;
+}
+section.poptavka form .item .button:focus, section.poptavka form .item .button:hover {
+  color: var(--semiblue);
+}
+section.poptavka form .item input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #fff inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  -webkit-text-fill-color: var(--black) !important;
+}
+
+section.reference article .image {
+  aspect-ratio: 83/49;
+  width: 41.5rem;
+  position: relative;
+}
+section.reference article .image > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section.reference article .image > div:nth-of-type(1) {
+  background-position: left top;
+}
+section.reference article .image > div:nth-of-type(2) {
+  background-position: right top;
+}
+@media (max-width: 500px) {
+  section.reference article .image {
+    order: 1 !important;
+    width: 100%;
+  }
+}
+section.reference article .image + div {
+  width: 23.5rem;
+}
+@media (max-width: 500px) {
+  section.reference article .image + div {
+    width: 100%;
+    padding-top: 2rem;
+  }
+}
+section.reference article .image + div h2 {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  margin-bottom: 1.5rem;
+}
+section.reference article .image + div p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 120%;
+  color: var(--black);
+  margin-top: 0.4rem;
+}
+section.reference article .image + div p strong {
+  color: var(--blue);
+  font-weight: 600;
+}
+section.reference article.reverse .image {
+  order: 2;
+}
+section.reference article.reverse .image + div {
+  order: 1;
+}
+section.reference article:nth-of-type(1) .image div:nth-of-type(1) {
+  background-image: url(../assets/data/r11.jpg);
+}
+section.reference article:nth-of-type(1) .image div:nth-of-type(2) {
+  background-image: url(../assets/data/r12.jpg);
+}
+section.reference article:nth-of-type(2) .image div:nth-of-type(1) {
+  background-image: url(../assets/data/r21.jpg);
+}
+section.reference article:nth-of-type(2) .image div:nth-of-type(2) {
+  background-image: url(../assets/data/r22.jpg);
+}
+section.reference article:nth-of-type(3) .image div:nth-of-type(1) {
+  background-image: url(../assets/data/r31.jpg);
+}
+section.reference article:nth-of-type(3) .image div:nth-of-type(2) {
+  background-image: url(../assets/data/r32.jpg);
+}
+section.reference article + article {
+  margin-top: 2.5rem;
+}
+
+section.nibe {
+  margin-top: 6rem;
+}
+section.nibe .middle {
+  background-color: var(--lightblue);
+}
+section.nibe .middle .flex > div:first-of-type {
+  width: 30rem;
+  padding: 2.5rem 0 0 2.5rem;
+}
+@media (max-width: 500px) {
+  section.nibe .middle .flex > div:first-of-type {
+    width: 100%;
+    padding: 2.5rem;
+  }
+}
+section.nibe .middle .flex > div:first-of-type h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 120%;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+@media (max-width: 500px) {
+  section.nibe .middle .flex > div:first-of-type h1 {
+    font-size: 2.4rem;
+    line-height: 120%;
+  }
+}
+section.nibe .middle .flex > div:first-of-type h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  width: 14rem;
+  height: 1rem;
+  background-color: var(--semiblue);
+}
+section.nibe .middle .flex > div:first-of-type p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 120%;
+  color: var(--black);
+  padding-top: 1.25rem;
+}
+section.nibe .middle .image {
+  aspect-ratio: 1/1;
+  width: 38.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/data/nibe.jpg);
+}
+@media (max-width: 500px) {
+  section.nibe .middle .image {
+    width: 100%;
+  }
+}

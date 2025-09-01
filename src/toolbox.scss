@@ -1,0 +1,82 @@
+@use 'abstracts/mixins' as *;
+@use 'abstracts/variables' as *;
+
+.clear {
+    clear: both;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.clear-right {
+    clear: right;
+}
+
+.float {
+    &.right {
+        float: right;
+    }
+    &.left {
+        float: left;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.d-n {
+    display: none!important;
+}
+
+.d-b {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.justify {
+        justify-content: space-between;
+    }
+
+    &.end {
+        justify-content: flex-end;
+    }
+
+    &.top {
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &.bottom {
+        align-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+.show-desktop {
+    @include mobile {
+        display: none;
+    }
+}

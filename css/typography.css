@@ -1,0 +1,29 @@
+h1 {
+  font-size: 2.8rem;
+  line-height: 120%;
+  font-family: "Rubik";
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+.tc {
+  text-align: center;
+}
+
+.small {
+  font-size: 0.8rem;
+  line-height: 120%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--blue);
+}

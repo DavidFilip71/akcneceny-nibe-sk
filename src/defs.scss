@@ -1,0 +1,12 @@
+@use 'abstracts/colors' as *;
+
+:root {
+  --red: #{$var-clr-red};
+  --blue: #{$var-clr-blue};
+  --semiblue: #{$var-clr-semiblue};
+  --lightblue: #{$var-clr-lightblue};
+  --white: #{$var-clr-white};
+  --black: #{$var-clr-black};
+  --err: #{$var-clr-err};
+  --success: #{$var-clr-success};
+}
