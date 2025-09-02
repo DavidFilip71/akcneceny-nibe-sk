@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="sk">
 
 <head>
     <meta charset="UTF-8" />
@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="css/typography.css?v=<?php echo md5(microtime(true)); ?>" />
     <link rel="stylesheet" href="css/page.css?v=<?php echo md5(microtime(true)); ?>" />
     <link rel="stylesheet" href="css/content.css?v=<?php echo md5(microtime(true)); ?>" />
-    <!--<link rel="stylesheet" href="css/forms.css?v=<?php echo md5(microtime(true)); ?>" />-->
     <link rel="stylesheet" href="css/toolbox.css?v=<?php echo md5(microtime(true)); ?>" />
 
     <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96" />
@@ -76,10 +75,10 @@
             </div>
         </div>
         <nav>
-            <a href="#benefity">aktuální benefity</a>
-            <a href="#akcni-sety">akční sety</a>
-            <a href="#poptavka">nezávazná poptávka</a>
-            <a href="#reference">reference</a>
+            <a href="#benefity">aktuálne benefity</a>
+            <a href="#akcni-sety">akčné sety</a>
+            <a href="#poptavka">nezáväzný dopyt</a>
+            <a href="#reference">referencie</a>
             <a href="<?php echo LINK_KONTAKT; ?>">kontakt</a>
         </nav>
 	</header>
@@ -89,13 +88,13 @@
             <div class="hero h1 is-current">
                 <div class="middle relative">
                     <p>Splitové sety NIBE</p>
-                    <p>Nyní za&nbsp;akční ceny!</p>
+                    <p>Teraz za&nbsp;akčné ceny!</p>
                 </div>
             </div>
             <div class="hero h2">
                 <div class="middle relative">
-                    <p>Nejvyšší kvalita nyní</p>
-                    <p>za&nbsp;<span>akční ceny!</span></p>
+                    <p>Najvyššia kvalita teraz</p>
+                    <p>za&nbsp;<span>akčné ceny!</span></p>
                     <div></div>
                 </div>
             </div>
@@ -106,71 +105,71 @@
 
     <main>
         <div class="middle">
-            <h1>Speciální nabídka ke&nbsp;splitovým setům:</h1>
+            <h1>Špeciálna ponuka k&nbsp;splitovým setom:</h1>
             <div class="flex top">
                 <div class="piggy icon">
-                    <div>Celková sleva<span>až 16&nbsp;500&nbsp;Kč</span><span>bez&nbsp;DPH</span></div>
+                    <div>Celková zľava<span>až 626&nbsp;&euro;</span><span>bez&nbsp;DPH</span></div>
                 </div>
                 <div>
-                    <p>Zdarma schválení instalace autorizovaným technikem*<span>(ceníková cena 5&nbsp;000&nbsp;Kč bez&nbsp;DPH)</span></p>
-                    <p>Zdarma montážní konzole (na&nbsp;zem/stěnu)<span>(ceníková cena až 5&nbsp;835&nbsp;Kč bez&nbsp;DPH)</span></p>
-                    <p>Zdarma vyhřívání odvodu kondenzátu KVR&nbsp;10&#8209;10<span>(ceníková cena 5&nbsp;665&nbsp;Kč bez&nbsp;DPH)</span></p>
+                    <p>Zadarmo schválenie inštalácie autorizovaným technikom*<span>(cenníková cena 200&nbsp;&euro; bez&nbsp;DPH)</span></p>
+                    <p>Zadarmo montážna konzola (na&nbsp;zem/stenu)<span>(cenníková cena až 199&nbsp;&euro; bez&nbsp;DPH)</span></p>
+                    <p>Zadarmo vyhrievanie odvodu kondenzátu KVR&nbsp;10&#8209;10<span>(cenníková cena 227&nbsp;&euro; bez&nbsp;DPH)</span></p>
                     <p class="disclaimer">
-                        *V&nbsp;rámci schválení instalace autorizovaným technikem NIBE bude posouzeno dodržení hlavních zásad a&nbsp;předpokladů pro&nbsp;správnou funkci tepelného čerpadla. Z&nbsp;důvodu proškolení a&nbsp;seznámení s&nbsp;obsluhou by měl být přítomen i&nbsp;budoucí uživatel zařízení. <strong>Schválení instalace je předpokladem pro uznání všech forem záruky nad rámec zákonné dvouleté lhůty.</strong>
+                        *V&nbsp;rámci schválenia inštalácie autorizovaným technikom NIBE bude posúdené dodržanie hlavných zásad a&nbsp;predpokladov pre&nbsp;správnu funkciu tepelného čerpadla. Z&nbsp;dôvodu preškolenia a&nbsp;zoznámenia s&nbsp;obsluhou by mal byť prítomný aj&nbsp;budúci užívateľ zariadenia. <strong>Schválenie inštalácie je predpokladom pre uznanie všetkých foriem záruky nad rámec zákonnej dvojročnej lehoty.</strong>
                     </p>
                 </div>
             </div>
-            <p class="disclaimer">Nabídka je platná při odebrání zboží do konce <strong>listopadu 2025</strong></p>
+            <p class="disclaimer">Ponuka je platná pri odobratí tovaru do&nbsp;konca <strong>novembra 2025</strong></p>
             <div class="benefit">
-                <p>NIBE - kvalitní, inovativní, švédská značka se&nbsp;skvělým servisem</p>
-                <p>Desetitisíce prodaných tepelných čerpadel a&nbsp;spokojených zákazníků</p>
+                <p>NIBE - kvalitná, inovatívna, švédska značka so&nbsp;skvelým servisom</p>
+                <p>Desaťtisíce predaných tepelných čerpadiel a&nbsp;spokojných zákazníkov</p>
             </div>
         </div>
     </main>
 
     <section class="sety">
         <div class="middle">
-            <h1>Akční sety</h1>
+            <h1>Akčné sety</h1>
             <article>
                 <h2>Prémiový splitový set: <strong>AMS 20 a&nbsp;SVM S332</strong></h2>
                 <div class="flex justify top wrap">
                     <div class="image"></div>
                     <div>
                         <p>
-                            <strong>kompletní řešení</strong> vytápění, chlazení a&nbsp;ohřevu vody v&nbsp;jednom
+                            <strong>kompletné riešenie</strong> vykurovania, chladenia a&nbsp;ohrevu vody v&nbsp;jednom
                         </p>
                         <p>
-                            <strong>sezónní topný faktor</strong> SCOP až&nbsp;5,08
+                            <strong>sezónny vykurovací faktor</strong> SCOP až&nbsp;5,08
                         </p>
                         <p>
                             <strong>ekologické chladivo</strong> R32
                         </p>
                         <p>
-                            <strong>vestavěný zásobník teplé vody</strong> 140&nbsp;l, akumulační nádrž 52&nbsp;l 
+                            <strong>vstavaný zásobník teplej vody</strong> 140&nbsp;l, akumulačná nádrž 52&nbsp;l 
                         </p>
                         <p>
-                            <strong>výkonné chlazení</strong> až do&nbsp;výstupní teploty vody +7&nbsp;°C
+                            <strong>výkonné chladenie</strong> až do&nbsp;výstupnej teploty vody +7&nbsp;°C
                         </p>
                         <p>
-                            <strong>intuitivní ovládání</strong> - přehledný dotykový displej a&nbsp;možnost bezdrátového příslušenství a&nbsp;dalšího rozšíření
+                            <strong>intuitívne ovládanie</strong> - prehľadný dotykový displej a&nbsp;možnosť bezdrôtového príslušenstva a&nbsp;ďalšieho rozšírenia
                         </p>
                         <p>
-                            <strong>chytrá konektivita</strong> -  integrované připojení k&nbsp;internetu, úsporná smart technologie a&nbsp;vzdálené ovládání myUplink pro maximální pohodlí
+                            <strong>múdra konektivita</strong> -  integrované pripojenie k&nbsp;internetu, úsporná smart technológia a&nbsp;vzdialené ovládanie myUplink pre maximálne pohodlie
                         </p>
-                        <a href="https://www.nibe.eu/cz/cs/produkty/systemove-jednotky-a-regulace/split-svm-s332---ams-20" target="_blank">více informací</a>
+                        <a href="https://www.nibe.eu/sk/sk/produkty/systemove-jednotky-a-regulacie/split-svm-s332---ams-20" target="_blank">viac informácií</a>
                     </div>
                 </div>
                 <div class="price">
-                    <p>akční ceny:</p>
+                    <p>akčné ceny:</p>
                     <div class="flex justify top wrap">
                         <div>AMS 20-6 + SVM S332</div>
-                        <div>199&nbsp;000&nbsp;Kč bez&nbsp;DPH</div>
-                        <p>běžná cena <span>218&nbsp;760&nbsp;Kč bez&nbsp;DPH</span></p>
+                        <div>8&nbsp;120&nbsp;&euro; bez&nbsp;DPH</div>
+                        <p>bežná cena <span>8&nbsp;666&nbsp;&euro; bez&nbsp;DPH</span></p>
                     </div>
                     <div class="flex justify top wrap">
                         <div>AMS 20-10 + SVM S332</div>
-                        <div>216&nbsp;500&nbsp;Kč bez&nbsp;DPH</div>
-                        <p>běžná cena <span>240&nbsp;900&nbsp;Kč bez&nbsp;DPH</span></p>
+                        <div>8&nbsp;830&nbsp;&euro; bez&nbsp;DPH</div>
+                        <p>bežná cena <span>9&nbsp;546&nbsp;&euro; bez&nbsp;DPH</span></p>
                     </div>
                 </div>
 
@@ -181,39 +180,39 @@
                     <div class="image"></div>
                     <div>
                         <p>
-                            <strong>chytré tepelné čerpadlo</strong> pro každý domov s&nbsp;Dražickou vnitřní jednotkou
+                            <strong>inteligentné tepelné čerpadlo</strong> pre každý domov s&nbsp;Dražickou vnútornou jednotkou
                         </p>
                         <p>
-                            <strong>cenově příznivé řešení</strong> vytápění, chlazení a&nbsp;ohřev vody do&nbsp;novostaveb
+                            <strong>cenovo priaznivé riešenie</strong> vykurovania, chladenia a&nbsp;ohrev vody do&nbsp;novostavieb
                         </p>
                         <p>
-                            <strong>sezónní topný faktor</strong> SCOP až&nbsp;5,08
+                            <strong>sezónny vykurovací faktor</strong> SCOP až&nbsp;5,08
                         </p>
                         <p>
                             <strong>ekologické chladivo</strong> R32
                         </p>
                         <p>
-                            <strong>vestavěný zásobník teplé vody</strong> 185&nbsp;l
+                            <strong>vstavaný zásobník teplej vody</strong> 185&nbsp;l
                         </p>
                         <p>
-                            <strong>optimální řešení cena - výkon</strong>
+                            <strong>optimálne riešenie cena - výkon</strong>
                         </p>
                         <p>
-                            <strong>zjednodušené ovládání a&nbsp;vzdálená správa</strong> - pomocí aplikace myUplink
+                            <strong>zjednodušené ovládanie a&nbsp;vzdialená správa</strong> - pomocou aplikácie myUplink
                         </p>
-                        <a href="https://www.nibe.eu/cz/cs/produkty/tepelna-cerpadla/tepelna-cerpadla-vzduch-voda/split-dsu" target="_blank">více informací</a>
+                        <a href="https://www.nibe.eu/sk/sk/produkty/tepelne-cerpadla/tepelne-cerpadla-vzduch-voda/split-dsu" target="_blank">viac informácií</a>
                         
                     </div>
                 </div>
                 <div class="price">
-                    <p>akční ceny:</p>
+                    <p>akčné ceny:</p>
                     <div class="flex justify top wrap">
                         <div>AMS 20-6 + DSU 200/6 SPLIT</div>
-                        <div>162&nbsp;000&nbsp;Kč bez&nbsp;DPH</div>
+                        <div>6&nbsp;610&nbsp;&euro; bez&nbsp;DPH</div>
                     </div>
                     <div class="flex justify top wrap">
                         <div>AMS 20-10 + DSU 200/8-12 SPLIT</div>
-                        <div>186&nbsp;000&nbsp;Kč bez&nbsp;DPH</div>
+                        <div>7&nbsp;590&nbsp;&euro; bez&nbsp;DPH</div>
                     </div>
                 </div>
             </article>
@@ -222,12 +221,12 @@
 
     <section class="poptavka">
         <div class="middle">
-            <h1>Odeslat nezávaznou poptávku</h1>
+            <h1>Odoslať nezáväzný dopyt</h1>
             <form action="">
                 <div class="flex top justify wrap">
                     <div class="col1">
                         <div class="item">
-                            <label for="jmeno" class="label">Jméno a příjmení</label>
+                            <label for="jmeno" class="label">Meno a priezvisko</label>
                             <input type="text" id="jmeno" name="jmeno">
                         </div>
                         <div class="item">
@@ -235,15 +234,15 @@
                             <input type="email" id="email" name="email">
                         </div>
                         <div class="item">
-                            <label for="telefon" class="label">Telefon</label>
+                            <label for="telefon" class="label">Telefón</label>
                             <input type="tel" id="telefon" name="telefon">
                         </div>
                         <div class="item">
-                            <label for="adresa" class="label">Adresa realizace</label>
+                            <label for="adresa" class="label">Adresa realizácie</label>
                             <input type="text" id="adresa" name="adresa">
                         </div>
                         <div class="item">
-                            <label for="psc" class="label">PSČ realizace</label>
+                            <label for="psc" class="label">PSČ realizácie</label>
                             <input type="text" id="psc" name="psc">
                         </div>
                     </div>
@@ -265,18 +264,18 @@
                                     <span class="material-icons">check</span>
                                 </div>
                                 <input type="checkbox" name="rekonstrukce" id="rekonstrukce" value="true">
-                                <label for="rekonstrukce" class="label check">Rekonstrukce</label> 
+                                <label for="rekonstrukce" class="label check">Rekonštrukcia</label> 
                             </div>
                         </div>
                         <div class="item">
-                            <div class="button submit" role="button" tabindex="0">odeslat</div>
+                            <div class="button submit" role="button" tabindex="0">odoslať</div>
                         </div>
                         <div class="item flex top">
                             <div class="checkbox" role="checkbox" tabindex="0" aria-checked="false">
                                 <span class="material-icons">check</span>
                             </div>
                             <input type="checkbox" name="souhlas" id="souhlas" value="true">
-                            <label for="souhlas" class="label check">Souhlasím se&nbsp;zpracováním osobních údajů podle následujících dokumentů: <a href="./assets/data/GDPR-1-NIBE-2025.pdf" target="_blank">GDPR&nbsp;1</a> a&nbsp;<a href="./assets/data/GDPR-2-NIBE-2025.pdf" target="_blank">GDPR&nbsp;2</a>.</label> 
+                            <label for="souhlas" class="label check">Súhlasím so&nbsp;<a href="./assets/data/GDPR-NIBE-2025-SK.pdf" target="_blank">spracovaním osobných údajov</a>.</label> 
                         </div>
                     </div>
                 </div>
@@ -286,26 +285,22 @@
 
     <section class="reference">
         <div class="middle">
-            <h1>Ukázky instalací v&nbsp;rodinných domech</h1>
+            <h1>Ukážky inštalácií v&nbsp;rodinných domoch</h1>
             <article class="flex justify top wrap reverse">
                 <div class="image">
                     <div></div>
                     <div></div>
                 </div>
                 <div>
-                    <h2>Českobudějovicko</h2>
-                    <p><strong>Typ výrobku:</strong> AMS&nbsp;10-16 + Lucie&nbsp;200 split</p>
-	                <p><strong>Rok instalace:</strong> 2023</p>
-	                <p><strong>Typ stavby:</strong> rodinný dům - rekonstrukce</p>
-	                <p><strong>Původní topení:</strong> plyn</p>
-	                
-	                <p><strong>Obytná/vytápěná plocha:</strong> 300&nbsp;m<sup>2</sup></p>
-	                <p><strong>Počet osob v&nbsp;domácnosti:</strong> 4</p>
-	                <p><strong>Proč tepelné čerpadlo?</strong> nízké provozní náklady</p>
-	                <p><strong>Proč značku NIBE?</strong> doporučení od&nbsp;známého</p>
-	                <p><strong>Radiátory/podlahovka:</strong> kombinace</p>
-	                
-	                <p><strong>Instalační firma:</strong> Miroslav Lenčéš</p>
+                    <h2>AMS&nbsp;10-16 + Lucie&nbsp;200 split</h2>
+	                <p><strong>Rok inštalácie:</strong> 2023</p>
+	                <p><strong>Typ stavby:</strong> rodinný dom - rekonštrukcia</p>
+	                <p><strong>Pôvodné kúrenie:</strong> plyn</p>
+	                <p><strong>Obytná/vykurovaná plocha:</strong> 300&nbsp;m<sup>2</sup></p>
+	                <p><strong>Počet osôb v&nbsp;domácnosti:</strong> 4</p>
+	                <p><strong>Prečo tepelné čerpadlo?</strong> nízke prevádzkové náklady</p>
+	                <p><strong>Prečo značku NIBE?</strong> odporúčanie od&nbsp;známého</p>
+	                <p><strong>Radiátory/podlahovka:</strong> kombinácia</p>
                 </div>
             </article>
             <article class="flex justify top wrap">
@@ -314,19 +309,15 @@
                     <div></div>
                 </div>
                 <div>
-                    <h2>Kutnohorsko</h2>
-                    <p><strong>Typ výrobku:</strong> AMS&nbsp;10-6 + Lucie&nbsp;200 split</p>
-	                <p><strong>Rok instalace:</strong> 2024</p>
-	                <p><strong>Typ stavby:</strong> rodinný dům - rekonstrukce</p>
-	                <p><strong>Původní topení:</strong> přímotopy</p>
-	                
-	                <p><strong>Obytná/vytápěná plocha:</strong> 81&nbsp;m<sup>2</sup></p>
-	                <p><strong>Počet osob v&nbsp;domácnosti:</strong> 3</p>
-	                <p><strong>Proč tepelné čerpadlo?</strong> temperování v&nbsp;zimě bez přítomnosti</p>
-	                <p><strong>Proč značku NIBE?</strong> doporučení od&nbsp;topenáře</p>
+                    <h2>AMS&nbsp;10-6 + Lucie&nbsp;200 split</h2>
+	                <p><strong>Rok inštalácie:</strong> 2024</p>
+	                <p><strong>Typ stavby:</strong> rodinný dom - rekonštrukcia</p>
+	                <p><strong>Pôvodné kúrenie:</strong> priamotopy</p>
+	                <p><strong>Obytná/vykurovaná plocha:</strong> 81&nbsp;m<sup>2</sup></p>
+	                <p><strong>Počet osôb v&nbsp;domácnosti:</strong> 3</p>
+	                <p><strong>Prečo tepelné čerpadlo?</strong> temperovanie v&nbsp;zime bez prítomnosti</p>
+	                <p><strong>Prečo značku NIBE?</strong> odporúčania od&nbsp;kúrenára</p>
 	                <p><strong>Radiátory/podlahovka:</strong> podlahovka</p>
-	                
-	                <p><strong>Instalační firma:</strong> Petr Švehlík</p>
                 </div>
             </article>
             <article class="flex justify top wrap reverse">
@@ -335,19 +326,15 @@
                     <div></div>
                 </div>
                 <div>
-                    <h2>Kolínsko</h2>
-                    <p><strong>Typ výrobku:</strong> AMS&nbsp;10-16 + NAD&nbsp;v1, OKC NTR/HP, SMO&nbsp;40</p>
-	                <p><strong>Rok instalace:</strong> 2022</p>
-	                <p><strong>Typ stavby:</strong> rodinný dům - rekonstrukce</p>
-	                <p><strong>Původní topení:</strong> elektrokotel</p>
-	                
-	                <p><strong>Obytná/vytápěná plocha:</strong> 164&nbsp;m<sup>2</sup></p>
-	                <p><strong>Počet osob v&nbsp;domácnosti:</strong> 3</p>
-	                
-	                <p><strong>Proč značku NIBE?</strong> doporučení od&nbsp;známého</p>
-	                <p><strong>Radiátory/podlahovka:</strong> kombinace</p>
-	                
-	                <p><strong>Instalační firma:</strong> Jaroslav Krupička</p>
+                    <h2>AMS&nbsp;10-16 + NAD&nbsp;v1, OKC NTR/HP, SMO&nbsp;40</h2>
+	                <p><strong>Rok inštalácie:</strong> 2022</p>
+	                <p><strong>Typ stavby:</strong> rodinný dom - rekonštrukcia</p>
+	                <p><strong>Pôvodné kúrenie:</strong> priamotopy</p>
+	                <p><strong>Obytná/vykurovaná plocha:</strong> 164&nbsp;m<sup>2</sup></p>
+	                <p><strong>Počet osôb v&nbsp;domácnosti:</strong> 3</p>
+	                <p><strong>Prečo tepelné čerpadlo?</strong> temperovanie v&nbsp;zime bez prítomnosti</p>
+	                <p><strong>Prečo značku NIBE?</strong> odporúčanie od&nbsp;známého</p>
+	                <p><strong>Radiátory/podlahovka:</strong> kombinácia</p>
                 </div>
             </article>
         </div>
@@ -357,9 +344,9 @@
         <div class="middle">
             <div class="flex top justify wrap">
                 <div>
-                    <h1>Švédská <br class="show-desktop">tepelná čerpadla nejvyšší kvality</h1>
-                    <p>80&nbsp;let zkušeností švédského výrobce NIBE zaručuje špičkovou technologii, vysoce úsporné vytápění, ohřev vody, větrání či chlazení. Tepelná čerpadla NIBE mají srozumitelné ovládání, elegantní skandinávský design, spolehlivý provoz a&nbsp;jsou šetrná k&nbsp;životnímu prostředí.</p>
-                    <p>Česko-slovenské zázemí značky NIBE ve&nbsp;společnosti Dražice vám zajistí nejen snadnou komunikaci, síť partnerských instalačních firem, ale především širokou a&nbsp;spolehlivou servisní síť.</p>
+                    <h1>Švédske <br class="show-desktop">tepelné čerpadlá najvyššej kvality</h1>
+                    <p>80&nbsp;rokov skúseností švédskeho výrobcu NIBE zaručuje špičkovú technológiu, vysoko úsporné vykurovanie, ohrev vody, vetranie či&nbsp;chladenie. Tepelné čerpadlá NIBE majú zrozumiteľné ovládanie, elegantný škandinávsky dizajn, spoľahlivú prevádzku a&nbsp;sú šetrné k&nbsp;životnému prostrediu.</p>
+                    <p>Česko-slovenské zázemie značky NIBE v&nbsp;spoločnosti Dražice vám zaistí nielen jednoduchú komunikáciu, sieť partnerských inštalačných firiem, ale predovšetkým širokú a&nbsp;spoľahlivú servisnú sieť.</p>
                 </div>
                 <div class="image"></div>
             </div>
@@ -368,15 +355,15 @@
 
     <footer>
         <div class="middle">
-            <p>Kompletní informace o&nbsp;produktech značky NIBE najdete na&nbsp;stránkách <a href="https://www.nibe.cz" target="_blank">www.nibe.cz</a></p>
-            <p>Divize NIBE ENERGY SYSTEMS CZ</p>
+            <p>Kompletné informácie o&nbsp;produktoch značky NIBE nájdete na&nbsp;stránkách <a href="https://www.nibe.sk" target="_blank">www.nibe.sk</a></p>
+            <p>Divízia NIBE ENERGY SYSTEMS CZ</p>
             <p>Dražice 69; 294&nbsp;71&nbsp;Benátky nad Jizerou; tel.: <a href="tel:00420326370911">+420&nbsp;326&nbsp;370&nbsp;911</a>; e-mail: <a href="mailto:info@nibe.cz">info@nibe.cz</a></p>
         </div>
     </footer>
     
     <div class="notices is-bottom-right"></div>
 
-    <script src="js/carousel.js?v=<?php echo md5(microtime(true)); ?>"></script>
+    <script src="js/carousel.js?v=2908"></script>
     <script src="js/toast.js?v=2908"></script>
     <script src="js/page.js?v=2908"></script>
     <script src="js/form.js?v=<?php echo md5(microtime(true)); ?>"></script>

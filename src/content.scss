@@ -72,19 +72,20 @@ section.carousel {
             @include mobile {
               padding-left: 0rem;
               top: 3rem;
-              font-size: 4rem; line-height: 100%;
+              font-size: 3.66rem; line-height: 100%;
+              width: 80%;
             }
           }
           &:nth-of-type(2) {
             font-size: 3.5rem; line-height: 100%;
             color: var(--red);
-            padding-left: 21rem;
-            top: 14rem;
+            padding-left: 20.5rem;
+            top: 13.75rem;
       
             @include mobile {
               padding-left: 0rem;
-              top: 11.5rem;
-              font-size: 3rem; line-height: 100%;
+              top: 10.5rem;
+              font-size: 2.66rem; line-height: 100%;
               width: 80%;
             }
           }
@@ -105,21 +106,21 @@ section.carousel {
 
             @include mobile {
               padding-left: 0rem;
-              top: 2.5rem;
-              font-size: 3.5rem; line-height: 100%;
+              top: 3.25rem;
+              font-size: 3.25rem; line-height: 100%;
             }
           }
           &:nth-of-type(2) {
             font-size: 4rem; line-height: 100%;
             color: #fff;
-            padding-left: 28rem;
+            padding-left: 30rem;
             top: 8rem;
 
             & + div {
               position: absolute;
               background-color: var(--red);
-              left: 33.5rem; top: 12.5rem;
-              width: 21rem; height: .85rem;
+              left: 35.5rem; top: 12.5rem;
+              width: 22.25rem; height: .85rem;
             }
 
             span { color: var(--red); }
@@ -127,11 +128,11 @@ section.carousel {
             @include mobile {
               padding-left: 0rem;
               top: 9.5rem;
-              font-size: 3.5rem; line-height: 100%;
+              font-size: 3.25rem; line-height: 100%;
 
               & + div {
-                left: 4.75rem; top: 13.25rem;
-                width: 18.75rem; height: .75rem;
+                left: 4.5rem; top: 13rem;
+                width: 18.25rem; height: .75rem;
               }
             }
           }
@@ -291,13 +292,13 @@ main {
       text-align: right;
 
       @include mobile {
-        left: 9rem; top: 9rem;
+        left: 10rem; top: 8rem;
       }
 
       span {
         display: block;        
         
-        &:first-of-type { font-size: 1.1em; line-height: 110%; }
+        &:first-of-type { font-size: 1.5em; line-height: 110%; }
         &:last-of-type { font-size: .54em; line-height: 110%; }
       }
     }
@@ -551,8 +552,8 @@ section.poptavka {
         display: block;
 
         &[for="souhlas"] {
-          padding: 0 0 0 .5rem;
-          font-size: .8rem; line-height: 120%;
+          padding: .58rem 0 0 .5rem !important;
+          font-size: 1rem; line-height: 120%;
 
           a { text-decoration: underline; }
         }
@@ -689,13 +690,13 @@ section.reference {
         h2 {
           color: var(--blue);
           font-weight: 700;
-          font-size: 1.5rem; line-height: 120%;
-          margin-bottom: 1.5rem;
+          font-size: 2rem; line-height: 120%;
+          margin-bottom: 2rem;
         }
 
         p {
           font-weight: 300;
-          font-size: 1.2rem; line-height: 120%;
+          font-size: 1.25rem; line-height: 120%;
           color: var(--black);
           margin-top: .4rem;
 

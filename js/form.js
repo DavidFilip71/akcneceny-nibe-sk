@@ -1,4 +1,4 @@
-const data = 'https://akcniceny.nibe.cz/data.php';
+const data = 'https://akcneceny.nibe.sk/data.php';
 
 const phoneRegexCZ = /^(?:(?:\+420|00420))?(?![18])(?=(?:\d{9}$))\d+$/;
 const phoneRegexSK = /^(?:\+421|00421)(?:2\d{8}|[3-5]\d\d{7})$/;
@@ -22,11 +22,11 @@ function clearErr(){
   });
 }
 
-const phoneErr = 'Telefonní číslo není v povoleném formátu.';
-const emailErr = 'E-mailová adresa není platná.';
-const zipErr = 'Poštovní směrovací číslo není platné.';
-const txLenErr = 'Vyplňte prosím toto pole';
-const checkboxErr = 'Je vyžadován souhlas se zpracováním osobních údajů';
+const phoneErr = 'Telefónne číslo nie je v povolenom formáte.';
+const emailErr = 'E-mailová adresa nie je platná.';
+const zipErr = 'Poštové smerovacie číslo nie je platné.';
+const txLenErr = 'Vyplňte, prosím, toto pole.';
+const checkboxErr = 'Vyžaduje sa súhlas so spracovaním osobných údajov.';
 
 function stripUnsupChars(str) {
   // odstrani emoji a non-unicode znaky
@@ -60,7 +60,7 @@ function emailTest(check_id){
 function phoneTest(check_id){
   let is_ok = true;
   let phone = document.getElementById(check_id).value;
-  if(!phoneRegexCZ.test(phone)){
+  if(!phoneRegexSK.test(phone)){
     showToast(phoneErr, "warning");
     is_ok = false;
   } 
@@ -70,7 +70,7 @@ function phoneTest(check_id){
 function zipTest(check_id){
   let is_ok = true;
   let zip = document.getElementById(check_id).value;
-  if(!zipRegexCZ.test(zip)){
+  if(!zipRegexSK.test(zip)){
     showToast(zipErr, "warning");
     is_ok = false;
   } 
@@ -96,7 +96,7 @@ document.querySelector('.button.submit').addEventListener('click', function (eve
   document.getElementById('telefon').value = document.getElementById('telefon').value.trim();
   // normalizace telefonniho cisla
   document.getElementById('telefon').value = stripSpaces(document.getElementById('telefon').value);
-  // document.getElementById('telefon').value = normalizePhoneSK(document.getElementById('telefon').value);
+  document.getElementById('telefon').value = normalizePhoneSK(document.getElementById('telefon').value);
   document.getElementById('poznamky').value = document.getElementById('poznamky').value.trim();
 
   let typ = "";
@@ -147,23 +147,23 @@ document.querySelector('.button.submit').addEventListener('click', function (eve
       notice: document.getElementById('poznamky').value,
       type: typ,
       gdpr_consent: 1,
-      lang: 'cz'
+      lang: 'sk'
     });
 
       const url = data + '?' + params.toString(); 
 
       fetch(url, {  method: 'GET'})
         .then(res => {
-          if (!res.ok) { throw new Error('Chyba serveru: ' + res.status); }
+          if (!res.ok) { throw new Error('Chyba servera: ' + res.status); }
           return res.json();
         })
         .then(reply => {
           if(reply.result == "nok"){
             let errorText;
-            if(reply.error == 4){ errorText = 'Nepovedlo se zapsat do databáze'; }
-            if(reply.error == 2){ errorText = 'E-mailová adresa už byla použita'; }
-            if(reply.error == 1){ errorText = 'E-mailová adresa není platná'; }
-            throw new Error('Odeslání poptávky se nezdařilo: ' + errorText);
+            if(reply.error == 4){ errorText = 'Nepodarilo sa zapísať do databázy'; }
+            if(reply.error == 2){ errorText = 'E-mailová adresa už bola použitá'; }
+            if(reply.error == 1){ errorText = 'E-mailová adresa nie je platná'; }
+            throw new Error('Odoslanie dopytu sa nepodarilo: ' + errorText);
           } 
           
           document.getElementById('jmeno').value = '';
@@ -180,7 +180,7 @@ document.querySelector('.button.submit').addEventListener('click', function (eve
             el.classList.remove('checked');
           });
 
-          showToast("Děkujeme za odeslání nezávazné poptávky!", "success");
+          showToast("Ďakujeme za odoslanie nezáväzného dopytu!", "success");
 
         })
         .catch(error => {
